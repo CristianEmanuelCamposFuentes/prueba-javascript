@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.taba</groupId>
+    <artifactId>prueba-javascript</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Configuración de Recursos Web -->
+    <build>
+        <resources>
+            <!-- Se especifica el directorio que contiene los recursos web -->
+            <resource>
+                <directory>src/main/webapp</directory>
+                <!-- Directorio de destino dentro del archivo JAR para los recursos web -->
+                <targetPath>META-INF/resources</targetPath>
+                <!-- Se incluyen todos los archivos del directorio webapp -->
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+
+</project>
