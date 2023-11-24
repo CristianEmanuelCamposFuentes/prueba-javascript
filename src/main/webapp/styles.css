@@ -10,10 +10,11 @@ body {
 }
 
 .container {
+    background: linear-gradient(45deg, #ddd7f3, #f3e8fd);
     max-width: 400px;
     margin: 20px auto;
     padding: 40px;
-    background-color: #fff;
+
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
@@ -29,10 +30,13 @@ h1 {
 }
 
 label {
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 15px;
     font-size: 14px;
-    color: #555;
+    font-style: italic;
+    color: #baf;
+    justify-content: flex-start;
 }
 
 input {
@@ -54,7 +58,8 @@ button {
     width: 30vw; /* Ancho del 80% de la ventana */
     font-size: 18px;
     margin-top: 10px;
-    display: block; /* Para centrar automáticamente en el eje horizontal */
+    display: flex; /* Para centrar automáticamente en el eje horizontal */
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -62,6 +67,7 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    color: white;
 }
 
 #resultado {
