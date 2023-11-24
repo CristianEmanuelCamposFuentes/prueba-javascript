@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PolloAsadoPizza</title>
+    <link rel="stylesheet" href="stylesPollo.css">
+</head>
+<body>
+<div class="container">
+    <h1>Hola Mozo, mi señora quiere pollo, hay o no?</h1>
+
+    <button id="polloButton" onclick="elegirDisponibilidad(true)">Sí, hay pollo</button>
+    <button id="noPolloButton" onclick="elegirDisponibilidad(false)">No hay pollo</button>
+
+    <div id="resultado"></div>
+
+    <button onclick="reiniciarTodo()">Reiniciar</button>
+</div>
+
+<script src="promesasPollo.js"></script>
+</body>
+</html>
+
